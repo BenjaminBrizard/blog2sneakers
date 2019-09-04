@@ -53,7 +53,7 @@ if (!empty($_POST)){
 			
 		} else {
 
-			if(strlen($_POST['mdp']) < 6 && strlen($_POST['mdp']) !== strlen($_POST['mdp2'])){
+			if(strlen($_POST['mdp']) < 6 || $_POST['mdp'] !== $_POST['mdp2']){
 
 			$msg = 'Mot de passe trop court ! ou ne sont pas identiques';
 
@@ -72,10 +72,15 @@ if (!empty($_POST)){
 			$pseudo = verify_input($_POST['pseudo']);
 			$mail = verify_input($_POST['mail']);
 			$mdp = password_hash($_POST['mdp'], PASSWORD_DEFAULT);
+			
 
-			$requser = $bdd->prepare("SELECT * FROM inscription WHERE pseudo = ? AND mail = ? AND mdp= ?");
-			$requser->execute(array($pseudo, $mail, $mdp));
+			$requser = $bdd->prepare("SELECT * FROM inscription WHERE pseudo = :pseudo AND mail = :mail");
+			$requser->execute(array(
+				'pseudo' => $pseudo, 
+				'mail' => $mail
+			));
 			$userexist = $requser->rowCount();
+			
 			
 			if($userexist === 1){
 				$msg = ' Vous avez déja un compte ! Veuillez vous connectez.';
@@ -102,31 +107,41 @@ if (!empty($_POST)){
 	// mémorisation variables utiilisateur en session
 	if(isset($_POST['connection']))
 	{
-		$mailconnect = ($_POST['mailconnect']);
 		$pseudoconnect = ($_POST['pseudoconnect']);
+		$mailconnect = ($_POST['mailconnect']);
 		$mdpconnect = ($_POST['mdpconnect']);
 
-	
 		if (!empty($mailconnect) AND !empty($pseudoconnect) AND !empty($mdpconnect)) 
 		{
-			$requser = $bdd->prepare("SELECT * FROM inscription WHERE pseudo = ? AND mail = ? AND mdp= ?");
-			$requser->execute(array($pseudoconnect, $mailconnect, $mdpconnect));
+			$requser = $bdd->prepare("SELECT * FROM inscription WHERE pseudo = ? AND mail = ?");
+			$requser->execute(array($pseudoconnect, $mailconnect));
 			$userexist = $requser->rowCount();
-			if($userexist == 1)	{
+
+			$err=false;
+			if($userexist === 1)	{
+				
 				$userinfos = $requser->fetch();
-				$_SESSION['id'] = $userinfos['id'];
-				$_SESSION['pseudo'] = $userinfos['pseudo'];
-				$_SESSION['mail'] = $userinfos['mail'];
-				$_SESSION['mdp'] = $userinfos['mdp'];
-				header('Location: blog2sneakers.php');
+				if (password_verify($mdpconnect, $userinfos['mdp'])) {
+					$_SESSION['pseudo'] = $userinfos['pseudo'];
+					$_SESSION['mail'] = $userinfos['mail'];
+					$_SESSION['mdp'] = $userinfos['mdp'];
+					header('Location: blog2sneakers.php');
+				} else {
+					$err = true;
+				}
 			} else {
+				$err = true;
+			}
+			if ($err) {
 				echo 'Les identifiants sont incorrects';
 			}
+
 		} else{
 			echo 'Tout les champs doivent etre remplis';
 		}
 	
 	}	
+	
 };
 
 
@@ -138,7 +153,9 @@ if (!empty($_POST)){
 <div class="col">
 <p>Vous n'avez pas de compte ?<br/><h3>Inscrivez-vous !</h3><p>
 <form method="POST"	action="contact.php">
+<?php if(isset($msg)): ?>
 <p class="alert-warning py-4 text-danger font-weight-bold"><?= $msg ?></p>
+<?php endif; ?>
   <div class="form-group">
     <label for="pseudo">Votre pseudo :</label>
     <input type="text" class="form-control" id="pseudo" name="pseudo" aria-describedby="pseudohelp" placeholder="Entrer votre pseudo">

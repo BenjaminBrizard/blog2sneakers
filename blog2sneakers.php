@@ -31,7 +31,7 @@
             <?php
             //var_dump($_SESSION);
             if( !empty ($_SESSION['pseudo'])){ 
-              $msg = "Salut " . $_SESSION['pseudo'] . " bienvenu !"; 
+              $msg = "Salut " . $_SESSION['pseudo'] . " bienvenue !"; 
             } else { 
               $msg = 'Salut à tous, je vais vous présenter ici un aperçu de ma collection personnelle de sneakers que j\'ai commencé il y à quelques années !';
             }
