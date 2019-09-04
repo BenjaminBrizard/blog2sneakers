@@ -1,0 +1,62 @@
+// styles commun aux différentes pages
+
+.navbar {
+    height: 100px;
+    
+    .navbar-nav {
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 70%;
+    }   
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.navbar-brand div {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.nav-link{
+    font-weight: bold;
+}
+
+.titre{
+    font-family: "Shadows Into Light";
+    font-weight: bold;
+    color:red; 
+}
+
+.carousel {
+    width: 100%;
+}
+h2{
+    text-align: center;
+    padding-top: 20px;
+    font-family:"Shadows Into Light";
+    font-size: 3.5em;
+}
+
+.msgdaccueil{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size:1.5em;
+}
+
+.dropdown{
+    position: relative;
+    padding-bottom: 20px;
+}
+
+form{
+    text-align: center;
+    margin-top: 40px;
+}
+
+

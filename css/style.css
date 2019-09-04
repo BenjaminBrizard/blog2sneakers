@@ -1,0 +1,192 @@
+.navbar {
+  height: 100px; }
+  .navbar .navbar-nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%; }
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  margin-bottom: 0; }
+
+.navbar-brand div {
+  display: inline-block;
+  margin-top: 15px; }
+
+.nav-link {
+  font-weight: bold; }
+
+.titre {
+  font-family: "Shadows Into Light";
+  font-weight: bold;
+  color: red; }
+
+.carousel {
+  width: 100%; }
+
+h2 {
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Shadows Into Light";
+  font-size: 3.5em; }
+
+.msgdaccueil {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 1.5em; }
+
+.dropdown {
+  position: relative;
+  padding-bottom: 20px; }
+
+form {
+  text-align: center;
+  margin-top: 40px; }
+
+h1 {
+  letter-spacing: 1em;
+  text-align: center;
+  color: red;
+  margin-top: 50px;
+  font-size: 3em; }
+
+.carousel-control-prev-icon:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  display: inline-block;
+  position: relative;
+  z-index: -1;
+  left: -8px;
+  top: -9px;
+  border-radius: 50%; }
+
+.carousel-control-next-icon:before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  display: inline-block;
+  position: relative;
+  z-index: -1;
+  left: -11px;
+  top: -9px;
+  border-radius: 50%; }
+
+.dark h5 a {
+  background-color: black;
+  color: red;
+  border-radius: 10px;
+  padding: 0 5px; }
+
+.light h5 a {
+  background-color: black;
+  color: red;
+  border-radius: 10px;
+  padding: 0 5px; }
+
+h5 a {
+  font-family: "Shadows Into Light";
+  letter-spacing: 0.5em; }
+
+.msgdaccueil {
+  margin-top: 25px; }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .container .card {
+    width: 16rem;
+    margin-bottom: 20px; }
+
+.contact {
+  background-color: red; }
+
+.titrecontact {
+  letter-spacing: 1em;
+  margin-top: 50px;
+  margin-left: 350px;
+  margin-right: 350px;
+  font-size: 2.5em;
+  text-align: center;
+  background-color: black;
+  border-radius: 50px;
+  padding: 0 20px; }
+
+.formulaire {
+  width: 50%;
+  margin: auto; }
+
+h3 {
+  font-family: "Shadows Into Light";
+  font-style: bold; }
+
+hr {
+  width: 1px;
+  height: 700px;
+  background-color: black; }
+
+.formulaireconnection {
+  margin-top: 85px; }
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 5px;
+  padding-right: 5px; }
+
+.photobasket {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center; }
+
+.dropdown {
+  padding-bottom: 20px;
+  margin-left: 25px; }
+
+.espacecom {
+  text-align: center;
+  margin-top: 40px;
+  font-family: "Shadows Into Light";
+  color: red;
+  font-size: 2.5em; }
+
+.btn-primary {
+  margin: 10px 10px; }
+
+hr {
+  margin: 30px 70px; }
+
+.commentaire p {
+  margin: 20px auto; }
+.commentaire .com {
+  background-image: radial-gradient(circle at center, white, grey);
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 500px; }
+.commentaire:nth-child(odd) .com {
+  background-image: radial-gradient(circle at center, grey, white); }
+
+.pseudo {
+  font-weight: bold;
+  font-style: italic;
+  color: blue;
+  width: 500px;
+  text-align: left; }
+
+p {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+a.btn {
+  display: block;
+  margin: 40px auto;
+  width: 150px; }

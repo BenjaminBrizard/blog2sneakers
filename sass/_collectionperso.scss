@@ -1,0 +1,11 @@
+// styles pour collection perso
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+    .card {
+        width:16rem;
+        margin-bottom: 20px;
+    }
+} 

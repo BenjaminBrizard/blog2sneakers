@@ -1,0 +1,62 @@
+
+h1{ 
+    letter-spacing: 1em;
+    text-align: center;
+    color:red;
+    margin-top: 50px;
+    font-size: 3em;
+}
+
+
+
+.carousel-control-prev-icon:before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    display: inline-block;
+    position: relative;
+    z-index: -1;    
+    left: -8px;
+    top: -9px;
+    border-radius: 50%;
+}
+.carousel-control-next-icon:before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    display: inline-block;
+    position: relative;
+    z-index: -1;    
+    left: -11px;
+    top: -9px;
+    border-radius: 50%;
+}
+
+.dark h5 {
+    a{
+        background-color:black;
+        color:red;
+        border-radius: 10px;
+        padding:0 5px;
+    }
+}
+.light h5 {
+    a{
+        background-color:black;
+        color:red;
+        border-radius: 10px;
+        padding:0 5px;
+       
+    }
+}
+
+h5 a{
+    font-family:"Shadows Into Light";
+    letter-spacing: 0.5em;
+}
+
+.msgdaccueil{
+    margin-top: 25px;
+}
