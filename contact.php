@@ -133,20 +133,18 @@ if (!empty($_POST)){
 				$err = true;
 			}
 			if ($err) {
-				echo 'Les identifiants sont incorrects';
+				$msg1 = 'Les identifiants sont incorrects';
 			}
 
 		} else{
-			echo 'Tout les champs doivent etre remplis';
+			$msg1 = 'Tout les champs doivent etre remplis';
 		}
-	
+			'$msg1';
 	}	
 	
 };
 
-
 ?>
-
 
 <div class="container-fluid">
 <div class="row">
@@ -180,7 +178,10 @@ if (!empty($_POST)){
 <p>Vous avez déja un compte ?<h3>Connectez-vous !</h3></p>
 <div class="formulaireconnection">
 <div class="container-fluid">
-<form method="POST"	action="contact.php">	
+<form method="POST"	action="contact.php">
+<?php if(isset($msg1)): ?>
+<p class="alert-warning py-4 text-danger font-weight-bold"><?= $msg1 ?></p>
+<?php endif; ?>	
   <div class="form-group">
     <label for="pseudo">Votre pseudo :</label>
     <input type="text" class="form-control" id="pseudoconnect" name="pseudoconnect" aria-describedby="pseudohelp" placeholder="Entrer votre pseudo">

@@ -32,8 +32,8 @@
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" href="article_air_force1.php">Air Force 1 Low Black Tie Dye</a>
-    <a class="dropdown-item" href="article_air_max_shematic">Air max 1 Shematic</a>
-    <a class="dropdown-item" href="article_parra">Dunk Parra</a>
+    <a class="dropdown-item" href="article_air_max_shematic.php">Air max 1 Shematic</a>
+    <a class="dropdown-item" href="article_parra.php">Dunk Parra</a>
   </div>
 </div>   
             
@@ -51,7 +51,7 @@
     <a href="../images/lespairesdumoment/airmax90/airmax90max2.jpg"><img src="../images/lespairesdumoment/airmax90/air_max90_2.jpg" class="img-fluid" alt="Responsive image"></a>
     <a href="../images/lespairesdumoment/airmax90/airmax90max3.jpg"><img src="../images/lespairesdumoment/airmax90/air_max90_3.jpg" class="img-fluid" alt="Responsive image"></a>
   </div>
-  <hr>
+  
   <!--     formulaire  -->
   <h4 class="espacecom">Espace Commentaires</h4>
   <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">

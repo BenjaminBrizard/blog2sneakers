@@ -53,7 +53,7 @@
         <a href="../images/macollection/Airmaxplus/airmaxplus3max.jpg"><img src="../images/macollection/Airmaxplus/airmaxplus3.jpg" class="img-fluid" alt="Responsive image"></a>
         
     </div>    
-    <hr>
+    
   <!-- formulaire -->
   <h4 class="espacecom">Espace Commentaires</h4>
   <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">

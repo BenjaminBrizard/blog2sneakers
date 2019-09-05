@@ -29,9 +29,9 @@
     Voir les autres articles de la section
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="article_air_max_plus">Air max Plus 20ème anniversaire</a>
+    <a class="dropdown-item" href="article_air_max_plus.php">Air max Plus 20ème anniversaire</a>
     <a class="dropdown-item" href="article_m2k.php">La M2K</a>
-    <a class="dropdown-item" href="article_tailwind">La Tailwind 4 OG</a>
+    <a class="dropdown-item" href="article_tailwind.php">La Tailwind 4 OG</a>
   </div>
 </div>
      
@@ -52,7 +52,7 @@
        <a href="../images/macollection/Airmaxtokyomaze/airmax2max2.jpg"><img src="../images/macollection/Airmaxtokyomaze/airmax2.jpg" class="img-fluid" alt="Responsive image"></a>
        <a href="../images/macollection/Airmaxtokyomaze/airmax3max3.jpg"><img src="../images/macollection/Airmaxtokyomaze/airmax3.jpg" class="img-fluid" alt="Responsive image"></a>
       </div>
-      <hr>    
+          
   <!--     formulaire   -->
 
   <h4 class="espacecom">Espace Commentaires</h4> 

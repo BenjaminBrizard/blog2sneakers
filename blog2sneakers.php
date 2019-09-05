@@ -19,7 +19,6 @@
  <body>
  <?php session_start(); ?>
  
-        <div>
             
             <!--navbar-->
             

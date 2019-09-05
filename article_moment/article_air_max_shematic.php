@@ -31,7 +31,7 @@ Voir les autres articles
 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 <a class="dropdown-item" href="article_air_force1.php">Air Force 1 Low Black Tie Dye</a>
 <a class="dropdown-item" href="article_air_max90.php">Air max 90 Viotech</a>
-<a class="dropdown-item" href="article_parra">Parra Dunk</a>
+<a class="dropdown-item" href="article_parra.php">Parra Dunk</a>
 </div>
       </div>
      
@@ -49,7 +49,7 @@ Voir les autres articles
         <a href="../images/lespairesdumoment/airmaxshematic/airmaxshematicmax2.jpg"><img src="../images/lespairesdumoment/airmaxshematic/air_max_shematic_2.jpg" class="img-fluid" alt="Responsive image"></a>
         <a href="../images/lespairesdumoment/airmaxshematic/airmaxshematicmax3.jpg"><img src="../images/lespairesdumoment/airmaxshematic/air_max_shematic_3.jpg" class="img-fluid" alt="Responsive image"></a>
       </div>
-      <hr>
+      
 <!--     formulaire  -->
 <h4 class="espacecom">Espace Commentaires</h4>
 <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">

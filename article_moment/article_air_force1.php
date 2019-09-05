@@ -32,7 +32,7 @@ Voir les autres articles de la section
 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 <a class="dropdown-item" href="article_air_max_shematic.php">Air max Shematic</a>
 <a class="dropdown-item" href="article_air_max90.php">Air max 90 Viotech</a>
-<a class="dropdown-item" href="article_parra">Parra Dunk</a>
+<a class="dropdown-item" href="article_parra.php">Parra Dunk</a>
 </div>
 </div>      
      
@@ -49,7 +49,7 @@ Voir les autres articles de la section
         <a href="../images/lespairesdumoment/airforce1/airforce1max3.jpg"><img src="../images/lespairesdumoment/airforce1/air_force1_2.jpg" class="img-fluid" alt="Responsive image"></a>
         <a href="../images/lespairesdumoment/airforce1/airforce1max1.jpg"><img src="../images/lespairesdumoment/airforce1/air_force1_3.jpg" class="img-fluid" alt="Responsive image"></a>
     </div>
-    <hr>
+    
 <!-- formulaire commentaires -->
 
 <h4 class="espacecom">Espace Commentaires</h4>

@@ -52,7 +52,7 @@
      <a href="../images/macollection/mk/m2kmax2.jpg"><img src="../images/macollection/mk/m2k2.jpg" class="img-fluid" alt="Responsive image"></a>
      <a href="../images/macollection/mk/m2kmax3.jpg"><img src="../images/macollection/mk/m2k3.jpg" class="img-fluid" alt="Responsive image"></a>
      </div>
-     <hr>
+     
 <!--     formulaire  -->
 <h4 class="espacecom">Espace Commentaires</h4> 
 <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">

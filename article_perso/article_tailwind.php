@@ -55,7 +55,7 @@
     <a href="../images/macollection/tailwind/tailwind3max.jpg"><img src="../images/macollection/tailwind/tailwind3.jpg" class="img-fluid" alt="Responsive image"></a>
         
     </div>
-    <hr>
+    
 <!--     formulaire  -->
 <h4 class="espacecom">Espace Commentaires</h4>  
 
