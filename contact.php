@@ -193,6 +193,7 @@ if (!empty($_POST)){
     <label for="mdp">Mot de passe : </label>
     <input type="password" class="form-control" id="mdpconnect" name="mdpconnect" placeholder="Entrer votre mot de passe">
   </div>
+  <a href ="nouveau_mdp.php">Mot de passe oublié ? <a>
   <button type="submit" name="connection"class="btn btn-primary">Connection</button>
 </form>
 </div>
