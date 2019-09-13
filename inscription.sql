@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  lun. 09 sep. 2019 à 14:24
+-- Généré le :  ven. 13 sep. 2019 à 09:41
 -- Version du serveur :  5.7.26
 -- Version de PHP :  7.2.18
 
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `inscription` (
   `mdp` varchar(255) NOT NULL,
   `new_mdp` int(1) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=72 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=73 DEFAULT CHARSET=latin1;
 
 --
 -- Déchargement des données de la table `inscription`
@@ -52,7 +52,8 @@ INSERT INTO `inscription` (`id`, `pseudo`, `mail`, `mdp`, `new_mdp`) VALUES
 (65, 'benjamin5', 'codintag@gmail.com', '$2y$10$3YKaFaTwU37mjvS17DvCMeiQ8Fgkymd7zf5xr2Bsvf1wYZAhOP1jW', 0),
 (64, 'benjamin', 'codintag@gmail.com', '$2y$10$Rpza.fUShlbYIFtnGbHQuuhgKuDtE.8Qaem4gNP20K.q0gcWD3VCq', 0),
 (63, 'erdal', 'codintag@gmail.com', '$2y$10$xpFJnCYxFvfGgp1fKrbSKujtmLFwT/qYVAKwmpM4w0AAVtMlOmIRC', 0),
-(62, 'ben', 'benbrizard@gmail.com', '$2y$10$nZ2zN30noFGsG4d/JqTAReV1/hSbZ/sLU6OxHMEMHORI21ooUsy.6', 0);
+(62, 'ben', 'benbrizard@gmail.com', '$2y$10$nZ2zN30noFGsG4d/JqTAReV1/hSbZ/sLU6OxHMEMHORI21ooUsy.6', 0),
+(72, 'auriane', 'auriane.mensah@gmail.com', '$2y$10$0cDrMQ2TJSI9g7ZudsPLFuZbU07IJ4v9BaXAfgwVG5UclVH9wYzLe', 0);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
