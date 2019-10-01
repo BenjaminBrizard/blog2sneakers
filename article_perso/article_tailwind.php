@@ -57,33 +57,17 @@
     </div>
     
 <!--     formulaire  -->
+
+<?php $info = "tailwind"; ?>
+
 <h4 class="espacecom">Espace Commentaires</h4>  
 
   <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
     Laisse un commentaire ! 
   </a>
-  <div class="collapse" id="collapseExample">
-    <div class="card card-body">
-      <div class="row">
-        <div class="col-sm-12"> 
-            <div class="formulaire">
-                <form method="POST" class="form" action="article_tailwind.php">
-                    <div class="form-group">
-                        <label for="name">Votre pseudo</label>
-                            <input type="text" name="pseudo" required placeholder="Entrer votre pseudo" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="commentaire">Votre message</label>
-                        <textarea class="form-control" name="commentaire" required></textarea>
-                    </div>
-                      <input name="code_produit" type="hidden" value="tailwind">  
-                        <button type="submit" class="btn-primary btn" name="envoyer" value="envoyer">Envoyer</button>
-                </form>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
+  <?php include("../formulaireCommentaire.php"); ?>
+  
     <?php include("../commentaires.php"); ?>
           
     </body>
